@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>购物车</title>
+<script type="text/javascript" src="js/gouwu.js" ></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+<header>
+  <div class="logo"> <img src="images/logo.png" /> </div>
+  <nav class="menu">
+    <ul class="center">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="chanpin.html">产品列表</a></li>
+      <li><a href="zhuce.html">会员注册</a></li>
+      <li><a href="denglu.html">会员登录</a></li>
+      <li><a href="gouwu.html">购物车</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="content">
+<div class="tit">购物车</div>
+<div class="catbox">
+  <table id="cartTable">
+    <thead>
+      <tr>
+        <th><label>
+          <input class="check-all check" type="checkbox"/>
+          &nbsp;全选</label></th>
+        <th>商品</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/5.png" alt=""/><span>LeBron XIX EP</span></td>
+        <td class="price">1399.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">1399.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/6.png" alt=""/><span>Nike Zoom 2K</span></td>
+        <td class="price">549.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">549.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/7.png" alt=""/><span>Nike Zoom Fly 4</span></td>
+        <td class="price">799.50</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">799.50</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/9.png" alt=""/><span>Nike Zoom Fly 4
+</span></td>
+        <td class="price">429.60</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">429.60</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="foot" id="foot">
+    <label class="fl select-all">
+    <input type="checkbox" class="check-all check"/>
+    &nbsp;全选</label>
+    <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+    <div class="fr closing" onClick="alert('结算成功！');javascript:window.location.href='index.html'">结 算</div>
+    <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+    <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+    <div class="selected-view">
+      <div id="selectedViewList" class="clearfix">
+        <div><img src="images/1.jpg"><span>取消选择</span></div>
+      </div>
+      <span class="arrow">◆<span>◆</span></span> </div>
+  </div>
+</div></div><footer>NIKE</footer>
+</body>
+</html>
